@@ -1,0 +1,119 @@
+.topHeader {
+  display: none;
+}
+
+.header {
+  background-color: #fff;
+  color: var(--primaryText);
+  padding: 1rem 0;
+  box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  background-color: var(--themeColor);
+  width: 240px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  gap: 3rem;
+  margin-right: -240px;
+  transition: all 0.2s;
+}
+
+.active {
+  margin-right: 0;
+}
+
+.quoteBtn {
+  display: none;
+  background-color: var(--themeColor3);
+  border: 1px solid var(--themeColor3);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.5s;
+}
+
+.quoteBtn:hover {
+  background-color: transparent;
+  color: var(--themeColor3);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger svg {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .topHeader {
+    display: block;
+    border-bottom: 1px solid var(--greyLight);
+    padding: 12px 0px;
+  }
+
+  .topHeaderWrapper {
+    color: var(--textColor);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phoneNumber {
+    display: flex;
+    gap: 30px;
+  }
+
+  .phoneLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .border {
+    width: 1px;
+    height: 16px;
+    background-color: var(--textLight);
+  }
+
+  .locationIcon {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar {
+    background-color: #fff;
+    position: static;
+    display: flex;
+    gap: 3rem;
+    width: unset;
+    margin-right: unset;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .quoteBtn {
+    display: block;
+  }
+}
