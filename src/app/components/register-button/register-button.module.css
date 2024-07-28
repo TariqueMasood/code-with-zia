@@ -1,0 +1,56 @@
+.registerButton {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: var(--themeColor2);
+  color: var(--whiteColor);
+  border: 1px solid var(--themeColor2);
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 18px;
+  transition: all ease-in-out 0.4s;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.registerButton:hover {
+  background-color: var(--themeColor1);
+  color: var(--textLight);
+  border: 1px solid var(--themeColor1);
+}
+
+@media (min-width: 480px) {
+  .registerButton {
+    cursor: pointer;
+    padding: 8px 24px;
+    background-color: var(--themeColor2);
+    color: var(--whiteColor);
+    border: 1px solid var(--themeColor2);
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    transition: all ease-in-out 0.4s;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .registerButton {
+    cursor: pointer;
+    padding: 16px 50px;
+    background-color: var(--themeColor2);
+    color: var(--whiteColor);
+    border: 1px solid var(--themeColor2);
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    transition: all ease-in-out 0.4s;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
