@@ -31,7 +31,7 @@ const Header = () => {
             <nav className={`${styles.navbar} ${isOpen ? styles.active : ""}`}>
               {<NavList isOpen={isOpen} setIsOpen={setIsOpen} />}
               <Link href="#" className={styles.quoteBtn}>
-                Get a quote
+                Register
               </Link>
             </nav>
           </div>

@@ -9,4 +9,6 @@ export interface FormContextProps {
   formData: FormData;
   updateFormData: (name: string, value: string) => void;
   resetFormData: () => void;
+  errors: { [key in keyof FormData]?: string | null };
+  validateAllFields: () => boolean;
 }
