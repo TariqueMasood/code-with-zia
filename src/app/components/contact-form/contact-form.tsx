@@ -1,12 +1,14 @@
 "use client";
 
-import { MouseEvent, useContext } from "react";
+import { useContext } from "react";
 import styles from "./contact-form.module.css";
 import { FormContext } from "@/context/form-context";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const context = useContext(FormContext);
+  const notify = () => toast("Form submitted successfully");
 
   const router = useRouter();
 
@@ -14,8 +16,7 @@ const ContactForm = () => {
     throw new Error("FormComponent must be used within a FormProvider");
   }
 
-  const { formData, updateFormData, resetFormData, saveToLocalStorage } =
-    context;
+  const { formData, updateFormData, resetFormData } = context;
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -33,10 +34,10 @@ const ContactForm = () => {
       await fetch("/api/send", {
         method: "POST",
         body: JSON.stringify({
-          email: "akramaltaf786@gmail.com",
           name: formData.name,
+          email: formData.email,
+          mobileNumber: formData.mobileNumber,
           message: formData.message,
-          visaType: formData.visaType,
         }),
         headers: {
           "content-type": "application/json",
@@ -46,8 +47,8 @@ const ContactForm = () => {
       console.log("Error", error);
     }
 
-    saveToLocalStorage();
     resetFormData();
+    notify();
     router.push("/");
   };
 
@@ -68,19 +69,13 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
         />
-        <select
-          name="visaType"
-          value={formData.visaType}
+        <input
+          type="text"
+          name="mobileNumber"
+          placeholder="Enter Your Mobile Number*"
+          value={formData.mobileNumber}
           onChange={handleChange}
-        >
-          <option value="">Select the visa type</option>
-          <option value="Student Visa">Student Visa</option>
-          <option value="Travel Visa">Travel Visa</option>
-          <option value="Working Visa">Working Visa</option>
-          <option value="Business Visa">Business Visa</option>
-          <option value="Visitor Visa">Visitor Visa</option>
-          <option value="Other">Other</option>
-        </select>
+        />
         <textarea
           name="message"
           value={formData.message}

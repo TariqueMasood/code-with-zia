@@ -1,0 +1,16 @@
+.scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  background-color: var(--themeColor3);
+  border: 1px solid var(--themeColor3);
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+
+.scrollButton svg {
+  font-size: 1.5rem;
+}

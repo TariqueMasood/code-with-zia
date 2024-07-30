@@ -9,7 +9,7 @@ const FormProvider = ({ children }: { children: ReactNode }) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
-    visaType: "",
+    mobileNumber: "",
     message: "",
   });
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
@@ -59,7 +59,7 @@ const FormProvider = ({ children }: { children: ReactNode }) => {
     setFormData({
       name: "",
       email: "",
-      visaType: "",
+      mobileNumber: "",
       message: "",
     });
 
@@ -72,10 +72,6 @@ const FormProvider = ({ children }: { children: ReactNode }) => {
         formData,
         updateFormData,
         resetFormData,
-        saveToLocalStorage,
-        loadFromLocalStorage,
-        editFormData,
-        deleteFormData,
       }}
     >
       {children}

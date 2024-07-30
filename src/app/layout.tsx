@@ -4,6 +4,10 @@ import "./globals.css";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import { FormProvider } from "@/context/form-context";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -21,6 +25,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <FormProvider>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
           <Header />
           {children}
           <Footer />
