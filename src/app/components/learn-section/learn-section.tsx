@@ -10,7 +10,7 @@ export const LearnSection = () => {
         </h1>
         <p className={styles.subTitle}>4 Hours Live Workshop</p>
         <div className={styles.list}>
-          <ul>
+          <ul className={styles.listItem}>
             <li>
               Learn about Data Analytics, Business Analytics and Business
               Intelligence
@@ -25,9 +25,9 @@ export const LearnSection = () => {
             </li>
             <li>5 steps ROADMAP to complete any data analytics project</li>
             <li>Power BI installation and importing Dataset</li>
-            <li>Creating 10+ Visuals in Power BI</li>
           </ul>
-          <ul>
+          <ul className={styles.listItem}>
+            <li>Creating 10+ Visuals in Power BI</li>
             <li>Data Modelling and Transformation using Power BI</li>
             <li>End-to-End Interactive reports using Power BI</li>
             <li>Guidelines on how to show your projects on Linkedin</li>
