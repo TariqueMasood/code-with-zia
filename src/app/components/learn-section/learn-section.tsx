@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "../../components/learn-section/learn-section.module.css";
-import { FaArrowCircleRight } from "react-icons/fa";
+import styles from "./learn-section.module.css";
 
 export const LearnSection = () => {
   return (

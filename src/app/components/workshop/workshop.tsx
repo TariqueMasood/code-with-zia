@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../components/workshop/workshop.module.css";
+import styles from "./workshop.module.css";
 import { BsCheck2Circle } from "react-icons/bs";
 import { RegisterButton } from "../register-button/register-button";
 

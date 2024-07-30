@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 40px 0px;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+}
+
+.title span {
+  color: var(--themeColor3);
+}
+
+.sliderContainer {
+  padding: 30px 0px;
+}
+
+.subTitile {
+  text-align: center;
+  font-size: 28px;
+}
+
+.subTitile span {
+  color: var(--themeColor3);
+}
