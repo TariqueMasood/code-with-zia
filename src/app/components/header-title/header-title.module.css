@@ -1,0 +1,46 @@
+.wrapper {
+  padding: 20px 0px;
+}
+
+.wrapper h1 {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wrapper h1 span {
+  color: var(--themeColor3);
+}
+
+.wrapper p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.border {
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, var(--themeColor2), transparent);
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0px 0px 30px;
+  }
+  .wrapper h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .wrapper h1 span {
+    color: var(--themeColor3);
+  }
+
+  .wrapper p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0px;
+  }
+}

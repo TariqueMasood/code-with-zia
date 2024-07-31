@@ -21,7 +21,7 @@ const links = [
   },
   {
     label: "Contact",
-    path: "#",
+    path: "/contact",
   },
 ];
 

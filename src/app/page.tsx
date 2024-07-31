@@ -1,5 +1,7 @@
 import { Attend } from "./components/workshop/workshop";
 import { LearnSection } from "./components/learn-section/learn-section";
+import ScrollBtn from "./components/scroll-btn/scroll-btn";
+import TestimonialCarousel from "./components/testimonial-carousel/testimonial-carousel";
 import { Dashboard } from "./components/dashboard/dashboard";
 import { Testimonial } from "./components/testimonial/testimonial";
 import { Certificate } from "./components/certificate/certificate";
@@ -10,10 +12,12 @@ export default function Home() {
     <main>
       <LearnSection />
       <Attend />
+      <TestimonialCarousel />
       <Dashboard />
       <Testimonial />
       <Certificate />
       <AccordionContent />
+      <ScrollBtn />
     </main>
   );
 }

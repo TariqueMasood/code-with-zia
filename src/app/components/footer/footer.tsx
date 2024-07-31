@@ -90,10 +90,6 @@ const Footer = () => {
                   hellodemo@gmail.com
                 </Link>
               </p>
-              <br />
-              <p>Mon-Fri: 9:00AM – 6:30PM</p>
-              <p>Saturday: 8:30AM – 3:30PM</p>
-              <p>Sunday: Closed</p>
             </div>
           </div>
         </div>
