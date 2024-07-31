@@ -62,7 +62,7 @@ const AccordionContent: NextPage = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div className="container">
+      <div className="container" style={{ borderRadius: "6px" }}>
         <h1 className={styles.title}>
           Frequently Asked <span>Questions</span>
         </h1>

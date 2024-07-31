@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import styles from "./accordion.module.css";
 
 interface AccordionItemProps {
   title: string;
@@ -24,22 +25,28 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   }, [isOpen]);
 
   return (
-    <div style={{ overflow: "hidden", transition: "all 0.3s ease" }}>
+    <div className={styles.accordionItemWrapper}>
       <div
         style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "10px",
-          background: "#eee",
+          padding: "16px",
+          background: "#f8f9fb",
           borderBottom: "1px solid #ddd",
           cursor: "pointer",
         }}
         onClick={onToggle}
       >
-        <span style={{ fontSize: "16px", fontWeight: "bold" }}>{title}</span>
+        <span
+          // className={isOpen ? "expandStyle" : "collapseStyle"}
+          style={{ fontSize: "16px", fontWeight: "bold" }}
+        >
+          {title}
+        </span>
         <span style={{ fontSize: "16px", fontWeight: "bold" }}>
           {isOpen ? "−" : "+"}
+          {/* {isOpen ? "🔽" : "▶️"} */}
         </span>
       </div>
       <div
@@ -53,7 +60,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
           // padding: "10px",
         }}
       >
-        {content}
+        <div className={styles.content}>{content}</div>
       </div>
     </div>
   );
