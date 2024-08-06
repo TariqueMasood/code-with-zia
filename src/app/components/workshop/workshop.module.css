@@ -1,5 +1,6 @@
 .wrapper {
   padding: 20px 0px;
+  background-color: #ffb6c1;
 }
 
 .title {
@@ -24,10 +25,6 @@
   display: flex;
   gap: 12px;
   padding: 20px 6px;
-  background-color: var(--themeColor3);
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .list li svg {
@@ -38,6 +35,17 @@
 .RegisterBtn {
   text-align: center;
   margin: 16px 0px;
+}
+
+.RegisterButton {
+  padding: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: var(--themeColor2);
+  border: 1px solid var(--themeColor2);
+  color: var(--greyLight);
+  text-transform: capitalize;
 }
 
 @media (min-width: 480px) {
@@ -55,8 +63,6 @@
     display: flex;
     gap: 12px;
     padding: 20px 6px;
-    background-color: var(--themeColor3);
-    border-radius: 6px;
   }
 
   .list li svg {
@@ -68,11 +74,24 @@
     text-align: center;
     margin: 25px 0px;
   }
+
+  .RegisterButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    background-color: var(--themeColor2);
+    border: 1px solid var(--themeColor2);
+    color: var(--greyLight);
+    text-transform: capitalize;
+  }
 }
 
 @media (min-width: 768px) {
   .wrapper {
     padding: 40px 0px;
+    /* background-color: #ffb6c1; */
+    background-color: var(--backgroundColor);
   }
 
   .title {
@@ -89,13 +108,14 @@
     font-size: 24px;
     line-height: 36px;
     padding: 20px 6px;
-    background-color: var(--themeColor3);
-    border-radius: 6px;
-    /* margin-top: 32px; */
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 12px;
+    background-color: #fbe9e7;
+    /* border-bottom: 1px solid #b76e79; */
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   }
 
   .list li svg {
@@ -106,5 +126,20 @@
   .RegisterBtn {
     text-align: center;
     margin: 40px 0px;
+  }
+
+  .RegisterButton {
+    padding: 20px 36px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: var(--themeColor2);
+    border: 1px solid var(--themeColor2);
+    color: var(--greyLight);
+    text-transform: capitalize;
+  }
+
+  .RegisterButton span {
+    font-weight: 400;
   }
 }

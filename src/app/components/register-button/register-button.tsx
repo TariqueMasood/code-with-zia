@@ -1,12 +1,30 @@
 import React from "react";
 import styles from "./register-button.module.css";
 
-export const RegisterButton = () => {
+interface RegisterButtonProps {
+  buttonText: string;
+  priceRange?: string;
+  additionalText?: string;
+  className?: string;
+}
+
+export const RegisterButton: React.FC<RegisterButtonProps> = ({
+  buttonText,
+  priceRange,
+  additionalText,
+  className,
+}) => {
+  const buttonClassName = `${styles.registerButton} ${className || ""}`;
   return (
     <div>
-      <button className={styles.registerButton}>
-        yes! i want to register <br />
-        <span>(&#8377;89 to &#8377;749) - few seats left</span>
+      <button className={buttonClassName}>
+        {buttonText} <br />
+        {priceRange && (
+          <span>
+            {priceRange} {additionalText && `- ${additionalText}`}
+          </span>
+        )}
+        {!priceRange && additionalText && <span>{additionalText}</span>}
       </button>
     </div>
   );

@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { BottomStrip } from "./components/bottom-strip/bottom-strip";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -39,7 +40,8 @@ export default function RootLayout({
           />
           <Header />
           {children}
-          <Footer />
+          {/* <Footer /> */}
+          <BottomStrip />
         </FormProvider>
       </body>
     </html>

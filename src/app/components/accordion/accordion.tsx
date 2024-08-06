@@ -26,21 +26,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
   return (
     <div className={styles.accordionItemWrapper}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "16px",
-          background: "#f8f9fb",
-          borderBottom: "1px solid #ddd",
-          cursor: "pointer",
-        }}
-        onClick={onToggle}
-      >
+      <div className={styles.accordionContent} onClick={onToggle}>
         <span
-          // className={isOpen ? "expandStyle" : "collapseStyle"}
-          style={{ fontSize: "16px", fontWeight: "bold" }}
+        // className={isOpen ? "expandStyle" : "collapseStyle"}
         >
           {title}
         </span>
@@ -56,7 +44,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
           opacity: isOpen ? 1 : 0,
           overflow: "hidden",
           transition: "height 0.3s ease, opacity 0.3s ease",
-          background: "#f9f9f9",
+          // background: "#f9f9f9",
           // padding: "10px",
         }}
       >

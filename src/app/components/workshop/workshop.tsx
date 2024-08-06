@@ -39,7 +39,12 @@ export const Attend = () => {
         </ul>
 
         <div className={styles.RegisterBtn}>
-          <RegisterButton />
+          <RegisterButton
+            buttonText="Yes! I want to register"
+            priceRange="(₹89 to ₹749)"
+            additionalText="few seats left"
+            className={styles.RegisterButton}
+          />
         </div>
       </div>
     </div>

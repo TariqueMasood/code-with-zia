@@ -11,7 +11,7 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({
   children,
-  autoplay = true,
+  autoplay = false,
   autoplaySpeed = 3000,
 }) => {
   const settings = {

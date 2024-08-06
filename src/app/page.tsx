@@ -12,9 +12,8 @@ export default function Home() {
     <main>
       <LearnSection />
       <Attend />
-      <TestimonialCarousel />
       <Dashboard />
-      <Testimonial />
+      <TestimonialCarousel />
       <Certificate />
       <AccordionContent />
       <ScrollBtn />

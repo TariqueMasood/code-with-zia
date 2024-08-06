@@ -1,4 +1,4 @@
-.registerButton {
+/* .registerButton {
   cursor: pointer;
   padding: 8px 12px;
   background-color: var(--themeColor2);
@@ -9,7 +9,6 @@
   font-size: 13px;
   line-height: 18px;
   transition: all ease-in-out 0.4s;
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -32,7 +31,6 @@
     font-weight: 500;
     line-height: 24px;
     transition: all ease-in-out 0.4s;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
@@ -40,7 +38,7 @@
 @media (min-width: 768px) {
   .registerButton {
     cursor: pointer;
-    padding: 16px 50px;
+    padding: 15px 32px;
     background-color: var(--themeColor2);
     color: var(--whiteColor);
     border: 1px solid var(--themeColor2);
@@ -50,7 +48,16 @@
     font-weight: 600;
     line-height: 32px;
     transition: all ease-in-out 0.4s;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+} */
+
+.registerButton {
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  border-radius: 6px;
+}
+
+.registerButton:hover {
+  transform: scale(1.02);
 }
