@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
 import { FormProvider } from "@/context/form-context";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
@@ -40,7 +39,6 @@ export default function RootLayout({
           />
           <Header />
           {children}
-          {/* <Footer /> */}
           <BottomStrip />
         </FormProvider>
       </body>
