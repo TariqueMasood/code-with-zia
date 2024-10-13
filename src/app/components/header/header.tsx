@@ -6,7 +6,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import NavList from "../nav-list/nav-list";
-import logo from "../../../../public/images/logo.png";
+import logo from "../../../../public/images/zia-logo-2.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
           <div className={styles.headerWrapper}>
             <div className={styles.logo}>
               <Link href="/">
-                <Image width={120} height={40} src={logo} alt="Logo" />
+                <Image className={styles.logoImg} src={logo} alt="Logo" />
               </Link>
             </div>
             <div

@@ -6,33 +6,35 @@ export const LearnSection = () => {
     <div className={styles.wrapper}>
       <div className="container">
         <h1 className={styles.title}>
-          What you’ll Learn In <span>this</span>
+          What you&apos;ll Learn In <span>this</span>
         </h1>
         <p className={styles.subTitle}>4 Hours Live Workshop</p>
         <div className={styles.list}>
           <ul className={styles.listItem}>
             <li>
-              Learn about Data Analytics, Business Analytics and Business
-              Intelligence
+              An overview of Data Analytics, Business Analytics, and Business
+              Intelligence.
             </li>
             <li>
-              Learn about the world&rsquo;s top Data Analytics tool by Microsoft
-              POWER BI
+              Insight into Microsoft Power BI, the leading data analytics tool.
             </li>
             <li>
-              Learn about industry needs and expectations from 21st-century data
-              analyst
+              Understanding industry expectations for 21st-century data
+              analysts.
             </li>
-            <li>5 steps ROADMAP to complete any data analytics project</li>
-            <li>Power BI installation and importing Dataset</li>
+            <li>A 5-step roadmap for completing any data analytics project.</li>
+            <li>Installation of Power BI and importing datasets.</li>
           </ul>
           <ul className={styles.listItem}>
-            <li>Creating 10+ Visuals in Power BI</li>
-            <li>Data Modelling and Transformation using Power BI</li>
-            <li>End-to-End Interactive reports using Power BI</li>
-            <li>Guidelines on how to show your projects on Linkedin</li>
-            <li>How to make a strong portfolio and How to start freelancing</li>
-            <li>How to prepare an Industry ready resume</li>
+            <li>Creating over 10 visuals in Power BI.</li>
+            <li>Data modeling and transformation techniques using Power BI.</li>
+            <li>Building end-to-end interactive reports with Power BI.</li>
+            <li>Tips on showcasing your projects on LinkedIn.</li>
+            <li>
+              Guidance on creating a strong portfolio and starting your
+              freelancing journey.
+            </li>
+            <li>How to prepare an industry-ready resume.</li>
           </ul>
         </div>
       </div>

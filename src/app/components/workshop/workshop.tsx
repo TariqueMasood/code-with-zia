@@ -13,28 +13,31 @@ export const Attend = () => {
         <ul className={styles.list}>
           <li>
             <BsCheck2Circle />
-            Any beginner who wants to land high package job at top MNCs.
+            Beginners looking to secure high-paying jobs at top MNCs.
           </li>
           <li>
             {" "}
             <BsCheck2Circle />
-            Any working professional who wants to switch career.
+            Working professionals considering a career switch.
           </li>
           <li>
             <BsCheck2Circle />
-            Any data analyst who wants to up skill and get highly paid.
+            Data analysts aiming to upskill and increase their earning
+            potential.
           </li>
           <li>
             <BsCheck2Circle />
-            Anyone who wants to kickstart career as Data Analyst.
+            Individuals wanting to kickstart their careers as data analysts.
           </li>
           <li>
             <BsCheck2Circle />
-            Any Data analyst who wants to stand out among competition.
+            Data analysts seeking to differentiate themselves in a competitive
+            market.
           </li>
           <li>
             <BsCheck2Circle />
-            Anyone who is struggling to find high paid job as Data Analyst.
+            Anyone facing challenges in finding well-paying data analyst
+            positions.
           </li>
         </ul>
 

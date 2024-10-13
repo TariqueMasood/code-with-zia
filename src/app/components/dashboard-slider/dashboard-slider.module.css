@@ -2,4 +2,8 @@
   display: flex;
   justify-content: center;
   gap: 24px;
+  width: 100%;
+  /* overflow-x: hidden; */
+  overflow: scroll;
+  scrollbar-width: none;
 }

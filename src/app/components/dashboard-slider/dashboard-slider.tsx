@@ -11,6 +11,11 @@ export const DashboardSlider = () => {
       <Image src={dashboardImg1} alt="pic1" width={400} height={250} />
       <Image src={dashboardImg2} alt="pic2" width={400} height={250} />
       <Image src={dashboardImg3} alt="pic3" width={400} height={250} />
+      <Image src={dashboardImg3} alt="pic3" width={400} height={250} />
+      <Image src={dashboardImg3} alt="pic3" width={400} height={250} />
+      <Image src={dashboardImg3} alt="pic3" width={400} height={250} />
+      <Image src={dashboardImg3} alt="pic3" width={400} height={250} />
+      <Image src={dashboardImg3} alt="pic3" width={400} height={250} />
     </div>
   );
 };
