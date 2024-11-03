@@ -30,7 +30,7 @@ const Header = () => {
             </div>
             <nav className={`${styles.navbar} ${isOpen ? styles.active : ""}`}>
               {<NavList isOpen={isOpen} setIsOpen={setIsOpen} />}
-              <Link href="#" className={styles.quoteBtn}>
+              <Link href="/contact" className={styles.quoteBtn}>
                 Register
               </Link>
             </nav>

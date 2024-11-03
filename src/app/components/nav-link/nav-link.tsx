@@ -9,15 +9,7 @@ const links = [
   },
   {
     label: "About",
-    path: "#",
-  },
-  {
-    label: "Client",
-    path: "#",
-  },
-  {
-    label: "Vacancies",
-    path: "#",
+    path: "/about",
   },
   {
     label: "Contact",
